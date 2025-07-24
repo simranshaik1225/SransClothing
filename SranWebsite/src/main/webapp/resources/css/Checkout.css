@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+.checkout-container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2, h3, h4 {
+    text-align: center;
+    color: #333;
+}
+
+.address-section input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.upi-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.upi-option {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.upi-option input {
+    display: none; /* hide radio buttons */
+}
+
+.upi-option img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.upi-option input:checked + img {
+    border-color: #4CAF50;  /* green border when selected */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+.place-order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1dbf73;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background-color: #17a364;
+}
